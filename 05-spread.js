@@ -7,6 +7,10 @@ const user = {
   active: false,
 };
 
-const updateUser = {...user, active: true};
+const updateUser = {
+  ...user,
+  skills: [...user.skills, 'Maneger'], 
+  active: true,
+};
 
 console.log(updateUser);
